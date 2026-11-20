@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --color-orange-95: #F9EFEC;
+    --color-orange-70: #E7BEB1;
+    --color-orange-60: #CE7D63;
+    --color-grey-70: #B3B3B2;
+    --color-grey-90: #E6E6E6;
+    --color-white: #FFFFFF;
+    --color-dark-06: #0F0F0F;
+    --color-dark-10: #1A1A1A;
+    --color-dark-12: #1F1F1F;
+    --color-dark-15: #262626;
+    --color-dark-20: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto Flex', 'Roboto Mono', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+}
+
+.our-works {
+    display: flex;
+    justify-content: center;
+    padding: 51px;
+    background-color: var(--color-dark-06);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1818px;
+}
+
+/* HEADER */
+.our-works__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-dark-10);
+    padding: 50px;
+    border-radius: 16px;
+}
+
+.our-works__title {
+    font-size: 4.8rem;
+    font-weight: 600;
+    color: var(--color-orange-95);
+    text-transform: uppercase;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.our-works__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.our-works__link-icon {
+    padding: 20px;
+    border: 1px solid var(--color-dark-15);
+    border-radius: 100px;
+}
+
+.icon-arrow-top-right {
+    width: 24px;
+    height: 24px;
+    background-image: url('../icons/arrow-top-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+
+.our-works__link-text {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--color-grey-70);
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+/* CARD */
+.project-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid var(--color-dark-12);
+    border-radius: 20px;
+}
+
+/* CARD INFO */
+.project-card__info {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 40px;
+    padding: 60px 40px;
+    border-radius: 14px;
+    background-color: var(--color-dark-10);
+}
+.project-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-card__header-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.project-card__icon {
+    padding: 16px;
+    border: 1px solid var(--color-dark-20);
+    border-radius: 12px;
+    background: var(--color-dark-12);
+}
+.icon-star {
+    width: 34px;
+    height: 34px;
+    background-image: url('../icons/star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+.project-card__name {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--color-orange-95);
+    font-family: 'Roboto Flex', sans-serif;
+}
+.project-card__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.project-card__link-icon {
+    padding: 14px;
+    border: 1px solid var(--color-dark-20);
+    border-radius: 100px;
+    background-color: var(--color-dark-12);
+}
+.project-card__link-icon .icon-arrow-top-right {
+    width: 20px;
+    height: 20px;
+    background-image: url('../icons/arrow-top-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+.project-card__link-text {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--color-grey-70);
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', sans-serif;
+}
+.project-card__category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.project-card__category-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 45px;
+    background-color: var(--color-dark-12);
+}
+.project-card__category-label {
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: var(--color-grey-70);
+    font-family: 'Roboto Flex', sans-serif;
+}
+.shape {
+    width: 4px;
+    height: 4px;
+    border: 1px solid var(--color-orange-60);
+    border-radius: 50%;
+    background-color: var(--color-orange-60);
+}
+.project-card__category-value {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--color-grey-90);
+    font-family: 'Roboto Flex', sans-serif;
+}
+.project-card__description {
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: var(--color-grey-70);
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+/* CARD IMAGE */
+.project-card__image {
+    width: 33%;
+}
+.project-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* CARD META */
+.project-card__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 33%;
+}
+.project-card__technologies {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 14px;
+    background-color: var(--color-dark-10);
+}
+.project-card__tech-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-family: 'Roboto Flex', sans-serif;
+}
+.project-card__tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.project-card__tech-item {
+    padding: 10px 16px;
+    border-radius: 45px;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: var(--color-grey-90);
+    background-color: var(--color-dark-12);
+    font-family: 'Roboto Mono', sans-serif;
+}
+.project-card__team {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 40px;
+    border-radius: 14px;
+    background-color: var(--color-dark-10);
+}
+.project-card__team-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-family: 'Roboto Flex', sans-serif;
+}
+.project-card__team-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.project-card__team-member {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: var(--color-orange-70);
+}
+.project-card__team-member img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+.project-card__contact {
+    padding: 18px 24px;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-dark-06);
+    background-color: var(--color-orange-60);
+    font-family: 'Roboto Flex', sans-serif;
+}
+.icon-light-bulb {
+    width: 28px;
+    height: 28px;
+    background-image: url('../icons/light-bulb.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+
+.project-card__link.mobile {
+    display: none;
+}
+
+.our-works__view-all{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 20px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: var(--color-dark-10);
+}
+.our-works__view-all-icon {
+    padding: 14px;
+    border: 1px solid var(--color-dark-15);
+    border-radius: 100px;
+    background-color: var(--color-dark-06);
+}
+.icon-arrow-down {
+    width: 20px;
+    height: 20px;
+    background-image: url('../icons/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+.our-works__view-all-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--color-grey-70);
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+@media (max-width: 1520px) {
+    .our-works { 
+        padding: 40px;
+    }
+
+    .container {
+        max-width: 1360px;
+        gap: 10px;
+    }
+
+    .our-works__header {
+        padding: 40px;
+        border-radius: 14px;
+    }
+
+    .our-works__title {
+        font-size: 3.8rem;
+    }
+
+    .our-works__link {
+        gap: 8px;
+    }
+
+    .our-works__link-icon {
+        padding: 16px;
+    }
+
+    .our-works__link-text {
+        font-size: 1.6rem;
+    }
+
+    .project-card {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .project-card__info {
+        padding: 50px 30px;
+        gap: 30px;
+    }
+
+    .project-card__header-title {
+        gap: 10px;
+    }
+
+    .project-card__icon {
+        padding: 14px;
+        border-radius: 10px;
+    }
+
+    .icon-star {
+        width: 28px;
+        height: 28px;
+    }
+
+    .project-card__name {
+        font-size: 1.8rem;
+    }
+
+    .project-card__link {
+        gap: 8px;
+    }
+
+    .project-card__link-icon {
+        padding: 10px;
+    }
+
+    .project-card__link-icon .icon-arrow-top-right {
+        width: 20px;
+        height: 20px;
+    }
+
+    .project-card__link-text {
+        font-size: 1.6rem;
+    }
+
+    .project-card__category {
+        gap: 10px;
+    }
+
+    .project-card__category-item {
+        padding: 8px 14px;
+        gap: 6px;
+    }
+
+    .project-card__category-label {
+        font-size: 1.4rem;
+    }
+
+    .project-card__category-value { 
+        font-size: 1.4rem;
+    }
+
+    .project-card__description {
+        font-size: 1.6rem;
+    }
+
+    .project-card__meta {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .project-card__technologies {
+        padding: 30px;
+        gap: 16px;
+        border-radius: 10px;
+    }
+
+    .project-card__tech-title {
+        font-size: 1.6rem;
+    }
+
+    .project-card__tech-item {
+        padding: 8px 14px;
+        font-size: 1.4rem;
+    }
+
+    .project-card__team {
+        padding: 16px 20px;
+        gap: 30px;
+        border-radius: 10px;
+    }
+
+    .project-card__team-title {
+        font-size: 1.6rem;
+    }
+
+    .project-card__team-list {
+        gap: 8px;
+    }
+
+    .project-card__team-member {
+        width: 40px;
+        height: 40px;
+    }
+
+    .project-card__contact {
+        padding: 14px 20px;
+        border-radius: 8px;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-card__info {
+        width: 100%;
+    }
+
+    .project-card__image {
+        width: 100%;
+    }
+
+    .project-card__meta {
+        width: 100%;
+    }
+
+    .our-works__link {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .our-works {
+        padding: 16px;
+    }
+    .container {
+        border: 2px solid var(--color-dark-12);
+        border-radius: 14px;
+        padding: 10px;
+    }
+    .our-works__header {
+        padding: 24px;
+    }
+    .our-works__title {
+        font-size: 2.8rem;
+        line-height: 100%;
+    }
+    .our-works__link {
+        display: none;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .project-card__info {
+        width: 100%;
+        padding: 24px;
+        gap: 20px;
+        border-radius: 10px;
+    }
+
+    .project-card__image {
+        width: 100%;
+    }
+
+    .project-card__meta {
+        display: none;
+        width: 100%;
+    }
+
+    .project-card__link {
+        display: none;
+    }
+
+    .project-card__link.mobile {
+        display: flex;
+    }
+
+
+    .project-card__name {
+        font-size: 1.6rem;
+    }
+
+    .project-card__category-label,
+    .project-card__category-value {
+        font-size: 1.2rem;
+    }
+
+    .project-card__description {
+        font-size: 1.4rem;
+    }
+
+    .our-works__view-all{
+        display: flex;
+    }
+}
